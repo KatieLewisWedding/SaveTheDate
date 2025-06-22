@@ -1,16 +1,87 @@
-body {
-    background-color: #FCD5CE;
+body, html {
+    background-color:  #fdbf7a;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.middle {
+    flex: 1;
+    background-color: white;
+    height: 100vh;
+    padding-top: 50px;
+    width: 80vw;
 }
 
 h1 {
-    color: #FF9899;
+    color: black;
     text-align: center;
     text-shadow: 1px 1px;
 }
 
 h2 {
-    color: #FF9899;
+    color: black;
     text-align: center;
     text-shadow: 1px 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.question {
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+.tab {
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 1s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+    text-align: center;
+}
+
+.tabcontent {
+  animation: fadeEffect 2s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 

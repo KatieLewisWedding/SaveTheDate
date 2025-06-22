@@ -8,11 +8,51 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body>   
+    <div class="container">
 <main>
-    <h1>Katie and Lewis' Wedding</h1>
-    <h2>Come join us for a day of celebration</h2>
+    <div class="middle">
+        <h1>Katie & Lewis</h1>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">Home</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Schedule</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Q & A</button>
+        <button class="tablinks" onclick="openCity(event, 'RSVP')">RSVP</button>
+    </div>
+
+    <div id="London" class="tabcontent">
+    <h3>Home</h3>
+    <p>This is the home page, this page will contain images of Lewis and
+        Katie and information about their lives.
+    </p>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+    <h3>Schedule</h3>
+    <p>3:00pm</p>
+    <p>Guests arrive</p>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+    <h3>Q & A</h3>
+    <p class="question">Where is the wedding?</p>
+    <p>The Ceromony and reception will be held at the Farm Byron Bay</p>
+    <p>11 Ewingsdale Road, Ewingsdale New South Wales 2481</p>
+    <p class="question">What time should I get there?</p>
+    <p>Things kick off at 3pm</p>
+    <p class="question">What is the dress code?</p>
+    <p>Cocktail Attire</p>
+    <p class="question">Are Kids Welcome</p>
+    <p>As much as we love you little ones, We will not be including them in the Ceremony or Recption</p>
+
+    </div>
+    <div id="RSVP" class="tabcontent">
+    <h3>RSVP</h3>
+    <p>RSVP Page</p>
+    </div>
+    </div>
 </main>
+</div>
 <script src="index.js"></script>
 </body>
 </html>
