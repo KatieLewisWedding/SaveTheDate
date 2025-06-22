@@ -3,12 +3,14 @@ body {
 }
 
 h1 {
-    color: #F9B3A7;
+    color: #FF9899;
     text-align: center;
+    text-shadow: 1px 1px;
 }
 
 h2 {
-    color: #F9B3A7;
+    color: #FF9899;
     text-align: center;
+    text-shadow: 1px 1px;
 }
 
