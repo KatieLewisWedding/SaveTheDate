@@ -39,6 +39,11 @@ h2 {
     font-weight: bold;
 }
 
+.question1 {
+    padding-top: 20px;
+    font-weight: bold;
+}
+
 .tab {
   overflow: hidden;
   background-color: white;
