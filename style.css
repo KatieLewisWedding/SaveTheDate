@@ -1,5 +1,5 @@
 body, html {
-    background-color:  #fdbf7a;
+    background-color:  #eddecf;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -12,18 +12,11 @@ body, html {
   height: 100%;
 }
 
-.middle {
-    flex: 1;
-    background-color: white;
-    height: 100vh;
-    padding-top: 50px;
-    width: 80vw;
-}
-
 h1 {
+    font-family: "Brush Script MT", cursive;
+    font-size: 50px;
     color: black;
     text-align: center;
-    text-shadow: 1px 1px;
 }
 
 h2 {
@@ -32,6 +25,13 @@ h2 {
     text-shadow: 1px 1px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+hr {
+  width: 80%;
+  border: none;
+  height: 0.5px;
+  background-color: #333;
 }
 
 .question {
@@ -44,11 +44,34 @@ h2 {
     font-weight: bold;
 }
 
+.break {
+  height: 0px;
+}
+
 .tab {
   overflow: hidden;
-  background-color: white;
+  background-color: #eddecf;
   display: flex;
   justify-content: center;
+}
+
+.RSVPBut {
+    background-color: #eddecf; /* Green */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 1s ease; /* Smooth transitions for all properties */
+}
+
+.RSVPBut:hover {
+    background-color: #000000;
+    color: #eddecf;
+    opacity: 0.8;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -64,29 +87,19 @@ h2 {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #EDEBE9;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #EDEBE9;
 }
 
 /* Style the tab content */
 .tabcontent {
-  display: none;
   padding: 6px 12px;
   border-top: none;
     text-align: center;
 }
 
-.tabcontent {
-  animation: fadeEffect 2s; /* Fading effect takes 1 second */
-}
-
-/* Go from zero to full opacity */
-@keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
 
