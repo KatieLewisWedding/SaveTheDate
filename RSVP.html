@@ -29,8 +29,10 @@
         <label for="subject">Dietary restrictions or allergies?</label>
         <textarea id="allergies" name="allergies" rows="6" required></textarea><br>
     <div class="form-group">
-        <label for="message">Do you require a seat on the bus, departing from Elements?</label><br>
-         <sub_label for="yes">Yes</sub_label>
+        <label for="message">Do you require a seat on the bus, departing from Elements or Discovery Parks?</label><br>
+         <sub_label for="yes">Yes - Elements of Byron</sub_label>
+        <input type="radio" id="yes" name="bus" value="Yes" required> <br>
+        <sub_label for="yes">Yes - Discovery Parks</sub_label>
         <input type="radio" id="yes" name="bus" value="Yes" required> <br>
         <sub_label for="no">No</sub_label>
         <input type="radio" id="no" name="bus" value="No" required> </div> <br>
@@ -39,6 +41,18 @@
         <textarea id="Song" name="Song" rows="6" required></textarea>
     </div>
     <div id="form-messages"></div>
+        <div class="form-group">
+        <label for="message">Are you attending the Welcome Dinner?</label><br>
+         <sub_label for="yes">Yes</sub_label>
+        <input type="radio" id="yes" name="bus" value="Yes" required> <br>
+        <sub_label for="no">No</sub_label>
+        <input type="radio" id="no" name="bus" value="No" required> </div>
+        <div class="form-group"> <br>
+        <label for="message">Are you attending the Recovery Brunch?</label><br>
+         <sub_label for="yes">Yes</sub_label>
+        <input type="radio" id="yes" name="bus" value="Yes" required> <br>
+        <sub_label for="no">No</sub_label>
+        <input type="radio" id="no" name="bus" value="No" required> </div>
     <input class="RSVPBut" type="submit" value="Submit">
 </form>
     </main>
