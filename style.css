@@ -32,6 +32,13 @@ body, html {
   z-index: -1;
 }
 
+.heartimg {
+  width: 90%;
+  display: block; 
+  margin: 0 auto;
+  margin-top: -60px;
+}
+
 h1 {
     font-family: 'Eyesome Script';
     font-size: 80px;
