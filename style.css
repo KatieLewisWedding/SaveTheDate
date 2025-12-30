@@ -32,11 +32,41 @@ body, html {
   z-index: -1;
 }
 
+.bottomSpace {
+  height: 200px;
+  width: 100%;
+}
+
+input[type="text"] {
+  background-color: #f7f1eb;
+}
+
+input[type="radio"] {
+  accent-color: #f7f1eb;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.buttonCenter { 
+  text-align: center;
+}
+
+textarea { 
+  background-color: #f7f1eb; 
+}
+
 .heartimg {
   width: 90%;
   display: block; 
   margin: 0 auto;
   margin-top: -60px;
+}
+
+.heartimgRSVP {
+  width: 90%;
+  display: block; 
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 h1 {
@@ -84,6 +114,12 @@ hr {
   background-color: #eddecf;
   display: flex;
   justify-content: center;
+}
+
+.no-link {
+  pointer-events: none;
+  text-decoration: none;
+  color: inherit;
 }
 
 .RSVPBut {
@@ -162,6 +198,17 @@ textarea {
     margin-bottom: 10px;
 }
 
+@media (min-width: 900px) { 
+  .titleimage {
+    opacity: 20%;
+  }
+}
 
-
-
+@media (max-width: 600px) { 
+  h1 {
+    font-size: 50px;
+  }
+  .heartimg {
+      margin-top: -30px;
+  }
+}
